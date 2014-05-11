@@ -2,7 +2,6 @@
 file<-"./data/household_power_consumption.txt"
 hpc<-read.csv(file,header=TRUE,sep=";",colClasses=c("character","character","numeric","numeric","numeric","numeric","numeric","numeric","numeric"),na.strings="?")
 
-
 ##Subset data from the dates 1/2/2007 and 2/2/2007
 hpcNew<-subset(hpc,Date=="1/2/2007" | Date=="2/2/2007")
 

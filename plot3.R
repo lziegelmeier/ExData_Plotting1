@@ -9,7 +9,7 @@ hpcNew<-subset(hpc,Date=="1/2/2007" | Date=="2/2/2007")
 hpcNew$DateTime <- strptime(paste(hpcNew$Date, hpcNew$Time),"%d/%m/%Y %H:%M:%S")
 # Create POSIXlt date/time
 
-##Create a line plot of the sub metering
+##Create a line plot of the sub-metering
 png("plot3.png", width = 480, height = 480) #Opens the png device
 plot(hpcNew$DateTime,hpcNew$Sub_metering_1,xlab="",ylab="Enery sub metering",type="l",col="black")
 lines(hpcNew$DateTime, hpcNew$Sub_metering_2, col="red")

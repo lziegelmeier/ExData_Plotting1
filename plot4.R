@@ -23,4 +23,4 @@ lines(hpcNew$DateTime, hpcNew$Sub_metering_3, col="blue")
 legend("topright", bty = "n",lwd = 1, col = c("black","red","blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 #Bottom Right Plot
 plot(hpcNew$DateTime,hpcNew$Global_reactive_power,xlab="datetime",ylab="Global_reactive_power",type="l")
-dev.off() #Closes the png device
+dev.off() #Close the png device
